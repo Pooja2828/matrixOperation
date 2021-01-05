@@ -1,0 +1,60 @@
+# matrixOperation
+
+//cpp code of the Matrix operation
+#include<iostream.h>
+using namespace std;
+void addition(int m[3][3],intn[3][3]);
+
+int main(){
+int a[3][3],b[3][3],i,j;
+//enter a
+for(i=0;i<=3;i++)
+{
+for(j=0;j<3;j++)
+{
+cin>>a[i][j];
+}
+}
+//enter b
+for(i=0;i<3;i++){
+for(j=0;j<3;j++){
+cin>>b[i][j];
+}
+}
+//show a
+for(i=0;i<3;i++){
+for(j=0;j<3;j++)
+{
+cout<<a[i][j];
+}
+}
+//show b
+for(i=0;i<3;i++){
+for(j=0;j<3;j++)
+{
+cout<<b[i][j];
+}
+}
+addition(a,b);
+return 0;
+}
+void addition(int m[3][3],intn[3][3]){
+int sum[3][3],j,i;
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+sum[i][j]=m[i][j]+n[i][j];
+}
+}
+cout<<"addition of th etwo matrix";
+for(i=0;i<3;i++)
+{
+for(j=0;j<3;j++)
+{
+cout<<sum[i][j];
+}
+cout<<endl;
+}
+
+
